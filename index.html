@@ -5,64 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soni Family Foundation</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        body, html {
             margin: 0;
             padding: 0;
+            font-family: Arial, sans-serif;
             scroll-behavior: smooth;
         }
-        nav {
+
+        /* Navigation Bar */
+        .navbar {
             position: fixed;
             top: 0;
             width: 100%;
             background: #333;
-            color: white;
             padding: 15px 0;
             text-align: center;
+            z-index: 1000;
         }
-        nav a {
+
+        .navbar a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
+            padding: 14px 20px;
+            display: inline-block;
         }
-        section {
-            padding: 100px 20px;
-            min-height: 100vh;
+
+        .navbar a:hover {
+            background: #555;
         }
-        #home { background: #f4f4f4; }
-        #about { background: #ddd; }
-        #projects { background: #bbb; }
-        #contact { background: #999; }
+
+        /* Sections */
+        .section {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        #home {
+            background: url('https://source.unsplash.com/1600x900/?charity,help') center/cover;
+        }
+
+        #about {
+            background: #6C63FF;
+        }
+
+        #programs {
+            background: #28A745;
+        }
+
+        #contact {
+            background: #DC3545;
+        }
+
+        .section h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            font-size: 1.2em;
+            max-width: 800px;
+        }
+
+        .donate-btn {
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 1.2em;
+            color: white;
+            background: #FFD700;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .donate-btn:hover {
+            background: #FFC107;
+        }
     </style>
 </head>
 <body>
-    <nav>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
         <a href="#home">Home</a>
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
+        <a href="#programs">Programs</a>
         <a href="#contact">Contact</a>
-    </nav>
-    
-    <section id="home">
+    </div>
+
+    <!-- Home Section -->
+    <div id="home" class="section">
         <h1>Welcome to Soni Family Foundation</h1>
-        <p>Dedicated to education, family health support, and research & development.</p>
-    </section>
-    
-    <section id="about">
+        <p>Empowering communities through Research & Development, Family Health Support, and Education.</p>
+        <a href="#contact" class="donate-btn">Donate Now</a>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="section">
         <h1>About Us</h1>
-        <p>Founded in 2025 by Mr. Arav Soni and Mr. Manmeet Soni, our foundation focuses on philanthropy and community impact.</p>
-    </section>
-    
-    <section id="projects">
-        <h1>Our Projects</h1>
-        <p>Discover the initiatives we support in education, healthcare, and research.</p>
-    </section>
-    
-    <section id="contact">
+        <p>
+            Our mission is to make a direct impact on society, by supporting Research & Development in Health Care, aiding Family Health Support, and by disrupting the barriers to Education.
+        </p>
+    </div>
+
+    <!-- Programs Section -->
+    <div id="programs" class="section">
+        <h1>Our Programs</h1>
+        <p><strong>Education Access Initiative:</strong> Providing scholarships and learning resources to underprivileged students.</p>
+        <p><strong>Family Health Support:</strong> Assisting families with medical care, mental health services, and wellness programs.</p>
+        <p><strong>Healthcare R&D Grants:</strong> Funding innovative research to advance medical breakthroughs.</p>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="section">
         <h1>Contact Us</h1>
-        <p>Reach out for collaboration or support.</p>
-        <p>Email: contact@sonifamilyfoundation.org</p>
-    </section>
+        <p>Email: info@sonifoundation.org (placeholder)</p>
+        <p>Phone: +1 (555) 123-4567 (placeholder)</p>
+    </div>
+
 </body>
 </html>
