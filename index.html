@@ -43,11 +43,47 @@
             justify-content: center;
             text-align: center;
             padding: 20px;
+            position: relative;
         }
 
         #home {
             background: url('https://raw.githubusercontent.com/Sonyboy30/Soni-Foundation-2.0/main/images/break%20the%20chains.jpeg') center/cover;
             color: white;
+        }
+
+        #about, #programs, #donate {
+            position: relative;
+        }
+
+        #about::before, #programs::before, #donate::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.6); /* Light overlay */
+            z-index: 1;
+        }
+
+        #about h1, #about p,
+        #programs h1, #programs p,
+        #donate h1, #donate p {
+            position: relative;
+            z-index: 2;
+            color: black;
+        }
+
+        #about {
+            background: url('https://raw.githubusercontent.com/Sonyboy30/Soni-Foundation-2.0/main/images/Family.jpg') center/cover;
+        }
+
+        #programs {
+            background: url('https://raw.githubusercontent.com/Sonyboy30/Soni-Foundation-2.0/main/images/students.jpg') center/cover;
+        }
+
+        #donate {
+            background: url('https://raw.githubusercontent.com/Sonyboy30/Soni-Foundation-2.0/main/images/Sunset.jpg') center/cover;
         }
 
         .section h1 {
