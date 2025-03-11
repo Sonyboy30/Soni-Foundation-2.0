@@ -46,16 +46,28 @@
             position: relative;
         }
 
+        /* Background Images */
         #home {
             background: url('https://raw.githubusercontent.com/Sonyboy30/Soni-Foundation-2.0/main/images/break%20the%20chains.jpeg') center/cover;
             color: white;
         }
 
-        #about, #programs, #donate {
-            position: relative;
+        #about {
+            background: url('https://raw.githubusercontent.com/Sonyboy30/Soni-Foundation-2.0/main/images/Family.jpg') center/cover;
         }
 
-        #about::before, #programs::before, #donate::before {
+        #programs {
+            background: url('https://raw.githubusercontent.com/Sonyboy30/Soni-Foundation-2.0/main/images/students.jpg') center/cover;
+        }
+
+        #donate {
+            background: url('https://raw.githubusercontent.com/Sonyboy30/Soni-Foundation-2.0/main/images/Sunset.jpg') center/cover;
+        }
+
+        /* Overlay to Improve Readability */
+        #about::before,
+        #programs::before,
+        #donate::before {
             content: "";
             position: absolute;
             top: 0;
@@ -72,18 +84,6 @@
             position: relative;
             z-index: 2;
             color: black;
-        }
-
-        #about {
-            background: url('https://raw.githubusercontent.com/Sonyboy30/Soni-Foundation-2.0/main/images/Family.jpg') center/cover;
-        }
-
-        #programs {
-            background: url('https://raw.githubusercontent.com/Sonyboy30/Soni-Foundation-2.0/main/images/students.jpg') center/cover;
-        }
-
-        #donate {
-            background: url('https://raw.githubusercontent.com/Sonyboy30/Soni-Foundation-2.0/main/images/Sunset.jpg') center/cover;
         }
 
         .section h1 {
@@ -110,6 +110,17 @@
         .donate-btn:hover {
             background: #FFC107;
         }
+
+        /* Instagram Icon */
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            margin: 5px;
+        }
     </style>
 </head>
 <body>
@@ -132,11 +143,17 @@
     <div id="about" class="section">
         <h1>About Us</h1>
         <p>
-            Our mission is to make a direct impact on society, by supporting Research & Development in Health Care, aiding Family Health Support, and by disrupting the barriers to Education.
+            Our mission is to make a direct impact on society by supporting Research & Development in Health Care,
+            aiding Family Health Support, and disrupting the barriers to Education.
         </p>
         <p>
-            The Soni Family Foundation was founded by Arav Soni and his father, Manmeet Soni, with the vision of creating a lasting impact in the fields of Research & Development, Family Health Support, and Education.
-            Arav Soni is a dedicated entrepreneur and philanthropist passionate about driving positive change. His father, Manmeet Soni, brings a wealth of experience and wisdom, ensuring the foundation remains true to its mission of breaking barriers and fostering innovation in healthcare and education.
+            The Soni Family Foundation was founded by Arav Soni and his father, Manmeet Soni, with the vision of creating
+            a lasting impact in the fields of Research & Development, Family Health Support, and Education.
+        </p>
+        <p>
+            Arav Soni is a dedicated entrepreneur and philanthropist passionate about driving positive change. His father,
+            Manmeet Soni, brings a wealth of experience and wisdom, ensuring the foundation remains true to its mission of
+            breaking barriers and fostering innovation in healthcare and education.
         </p>
     </div>
 
@@ -157,6 +174,13 @@
         <h1>Contact Us</h1>
         <p>Email: sonifamilyfoundation@gmail.com</p>
         <p>Phone: +1 (857) 361-9601</p>
+
+        <!-- Instagram Icon & Link -->
+        <div class="social-icons">
+            <a href="https://www.instagram.com/sonifamilyfoundation/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+        </div>
     </div>
 
 </body>
